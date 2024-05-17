@@ -21,7 +21,7 @@ def display_centered_title(title):
     left_margin = (terminal_width - title_length) // 2
     print("=" * left_margin + title + "=" * left_margin)
 
-# Function to display available games and their details
+# Function to display available games with their numbers and rental costs
 def display_available_games():
     display_centered_title("Available Games")
     for game, info in game_library.items():
@@ -287,7 +287,7 @@ def check_balance(username):
     input("Press ENTER to continue...")
     logged_in_menu(username)
 
-# Function to display the user menu after login
+# Function to handle user's logged-in menu
 def logged_in_menu(username):
     display_centered_title("User Menu")
     print(f"Welcome to Video Game Rental, {username}!")
@@ -456,7 +456,7 @@ def admin_menu():
             main()
             break
 
-# Main function to start the program
+# Main function to run the program
 def main():
     display_centered_title("Video Game Rental System")
     print("Main Menu")
