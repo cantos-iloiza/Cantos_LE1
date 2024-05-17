@@ -460,7 +460,7 @@ def admin_menu():
 def main():
     display_centered_title("Video Game Rental System")
     print("Main Menu")
-    print("1. Display Available Games")
+    print("1. Available Rental Games")
     print("2. Sign Up (User)")
     print("3. Sign In (User)")
     print("4. Admin Sign In")
